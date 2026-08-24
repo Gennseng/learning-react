@@ -7,6 +7,9 @@ body {
     background-color:#282D35;
     font-family: Noto Sans JP, sans-serif;
     color: white;
+    background-image: url("/src/assets/Tonberry-FF7.webp");
+    background-repeat: no-repeat;
+    background-position: 110% 700%;
 }
 
 header {
@@ -48,4 +51,9 @@ header {
 
 .main-list > li {
     margin: 10px;
+}
+
+.main-list > li::marker {
+    color: #FFFF00;
+    font-size: 1.5rem;
 }
