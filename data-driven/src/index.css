@@ -1,0 +1,24 @@
+html, body {
+    margin: 0;
+    font-family: Inter, 'Sans Serif';
+}
+
+header {
+    background-color: #d4132a;
+    margin-top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;  
+}
+
+.header-img {
+    align-self: center;
+}
+
+.header-title {
+    font-size: 30px;
+    color: white;
+}
+
