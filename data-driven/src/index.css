@@ -22,3 +22,52 @@ header {
     color: white;
 }
 
+.entry {
+    display: flex;
+    padding: 100px;
+    gap: 20px;
+}
+
+.entry-img-container {
+    width: 250px;
+    height: 336px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.entry-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.entry-content {
+    padding: 10px;
+}
+
+.entry-content-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.entry-name {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.entry-date {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2.entry-title {
+    margin-top: 5px;
+    font-size: 50px;
+}
+
+.marker-icon {
+    width: 10px;
+    align-self: center;
+}
