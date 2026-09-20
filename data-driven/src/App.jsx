@@ -1,37 +1,22 @@
 import Header from '/src/components/Header.jsx'
 import Entry from '/src/components/Entry.jsx'
-import Contact from '/src/components/cat_contacts/Contact.jsx'
 
 export default function App () {
     return (
         <>
-            {/* 
-                arbitrary attributes can be created to react components to pass in specific data 
-                this allows for more reusability
-            */}
-            <Contact 
-                img="src/images/mr-whiskerson.png"
-                name="Mr. Whiskerson"
-                number="(212) 555-1234"
-                email="mr.whiskaz@catnap.meow"
-            />
-            <Contact 
-                img="src/images/fluffykins.png"
-                name="Fluffykins"
-                number="(212) 555-2345"
-                email="fluff@me.com"
-            />
-            <Contact 
-                img="src/images/felix.png"
-                name="Felix"
-                number="(212) 555-4567"
-                email="thecat@hotmail.com"
-            />
-            <Contact 
-                img="src/images/pumpkin.png"
-                name="Pumpkin"
-                number="(0800) CAT KING"
-                email="pumpkin@scrimba.com"
+            <Header />
+            <Entry 
+                img={ 
+                    {
+                        src: "https://scrimba.com/links/travel-journal-japan-image-url",
+                        alt: "Mt. Fuji"
+                    } 
+                }
+                title="Mt. Fuji"
+                country="Japan"
+                gmaplink="https://www.google.com/maps/place/Mount+Fuji/@35.3606421,138.7170637,15z/data=!3m1!4b1!4m6!3m5!1s0x6019629a42fdc899:0xa6a1fcc916f3a4df!8m2!3d35.3606255!4d138.7273634!16zL20vMGNrczA?entry=ttu"
+                date="July 2024"
+                body="I've seen this up close! It's big! And it's REALLY cold!!"
             />
         </>
     )

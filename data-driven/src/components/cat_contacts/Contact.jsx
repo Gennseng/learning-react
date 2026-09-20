@@ -1,25 +1,25 @@
-export default function Contact(props) {
+export default function Contact({img, name, number, email}) {
     // console logging props will return all Contact objects
     return(
         <article className="contact-card">
             <img 
-                src={ props.img }
+                src={ img }
                 alt="Photo of { props.name }"
             />
-            <h3>{ props.name }</h3>
+            <h3>{ name }</h3>
             <div className="info-group">
                 <img 
                     src="src/images/phone-icon.png" 
                     alt="phone icon" 
                 />
-                <p>{ props.number }</p>
+                <p>{ number }</p>
             </div>
             <div className="info-group">
                 <img 
                     src="src/images/mail-icon.png" 
                     alt="mail icon"
                 />
-                <p>{ props.email }</p>
+                <p>{ email }</p>
             </div>
         </article>
     )
